@@ -28,12 +28,10 @@ export default function Receipt() {
   return (
     <div className="thankyou stack">
       <section className="thankyou__intro">
-        <p className="eyebrow">All set</p>
-        <h1>Take your claim number to any print shop</h1>
+        <p className="eyebrow">order placed</p>
+        <h1>Take your claim number to designated print shop</h1>
         <p className="thankyou__sub">
-          Tell the code below at print shop to print. Codes don't expire, but the
-          file itself is only kept for 7 days.
-        </p>
+          Tell the code below at print shop to get your print.</p>
       </section>
 
       <div className="thankyou__tickets stack">
@@ -53,9 +51,7 @@ export default function Receipt() {
       <NearbyKiosks pages={totalPages} />
 
       <div className="thankyou__actions stack">
-        <Link to="/lookup" className="btn btn-ghost btn-block">
-          Look up a claim number later
-        </Link>
+        
         <Link to="/upload" className="btn btn-primary btn-block">
           Upload another document
         </Link>

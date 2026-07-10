@@ -61,7 +61,7 @@ export default function NearbyKiosks({ pages }) {
 
   return (
     <div className="nearby-kiosks">
-      <p className="eyebrow nearby-kiosks__eyebrow">Closest print shops</p>
+      <p className="eyebrow nearby-kiosks__eyebrow">Where to collect?</p>
 
       {(state === "locating" || state === "loading") && (
         <p className="nearby-kiosks__status">Finding print shops near you…</p>
@@ -87,8 +87,10 @@ export default function NearbyKiosks({ pages }) {
             <span className="nearby-kiosks__address">{kiosks[0].address}</span>
           </span>
           <span className="nearby-kiosks__walk">
-            {kiosks[0].waitingTime} min wait
-          </span>
+  {kiosks[0].waitingTime} min total (
+  {kiosks[0].queueMinutes || 0} min queue +{" "}
+  {kiosks[0].walkingTimeMinutes || 0} min walk)
+</span>
         </div>
       )}
     </div>
