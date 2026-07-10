@@ -6,7 +6,7 @@ const STEPS = [
   { label: "Upload your document", detail: "PDF, Word, Excel, PowerPoint, or a photo of a page." },
   { label: "Pay with JazzCash", detail: "PKR 10 per page, billed straight to your mobile wallet." },
   { label: "Get your claim number", detail: "A 6-digit code — this is your receipt." },
-  { label: "Pick it up nearby", detail: "visit print shop in our network designmate to you to print." },
+  { label: "Pick it up nearby", detail: "visit print shop in our network designated to you to print." },
 ];
 
 export default function Home() {
