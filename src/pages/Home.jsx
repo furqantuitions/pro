@@ -21,7 +21,7 @@ export default function Home() {
         </h1>
         <p className="home__sub">
           PrintDash connects you to a network of print shops near you — send a document from your phone,
-          pay online, and walk up to the nearest one to collect a printed copy. No queues, no cash, no app
+          pay online, and walk up to collect a printed copy. No queues, no cash, no app
           to install.
         </p>
         <Link to="/upload" className="btn btn-primary home__cta">

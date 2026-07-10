@@ -31,7 +31,7 @@ export default function Receipt() {
         <p className="eyebrow">All set</p>
         <h1>Take your claim number to any print shop</h1>
         <p className="thankyou__sub">
-          Type the code below in at any print shop in our network to print. Codes don't expire, but the
+          Tell the code below at print shop to print. Codes don't expire, but the
           file itself is only kept for 7 days.
         </p>
       </section>

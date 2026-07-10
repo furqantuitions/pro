@@ -35,7 +35,9 @@ export default function NearbyKiosks({ pages }) {
             .slice(0, 5)
             .map((kiosk) => ({
               ...kiosk,
-              waitingTime: (kiosk.queueMinutes || 0) + (kiosk.walkingTimeMinutes || 0),
+              waitingTime:
+                (kiosk.queueMinutes || 0) +
+                (kiosk.walkingTimeMinutes || 0),
             }));
           setKiosks(closest);
           setState("ready");
@@ -79,17 +81,15 @@ export default function NearbyKiosks({ pages }) {
       )}
 
       {state === "ready" && kiosks.length > 0 && (
-        <ol className="nearby-kiosks__list">
-          {kiosks.map((kiosk) => (
-            <li className="nearby-kiosks__item" key={kiosk.kioskId}>
-              <span className="nearby-kiosks__place">
-                <span className="nearby-kiosks__name">{kiosk.name}</span>
-                <span className="nearby-kiosks__address">{kiosk.address}</span>
-              </span>
-              <span className="nearby-kiosks__walk">{kiosk.waitingTime} min wait</span>
-            </li>
-          ))}
-        </ol>
+        <div className="nearby-kiosks__item">
+          <span className="nearby-kiosks__place">
+            <span className="nearby-kiosks__name">{kiosks[0].name}</span>
+            <span className="nearby-kiosks__address">{kiosks[0].address}</span>
+          </span>
+          <span className="nearby-kiosks__walk">
+            {kiosks[0].waitingTime} min wait
+          </span>
+        </div>
       )}
     </div>
   );
