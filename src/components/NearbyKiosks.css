@@ -1,0 +1,75 @@
+.nearby-kiosks {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  padding: 16px 18px 4px;
+}
+
+.nearby-kiosks__eyebrow {
+  margin: 0 0 10px;
+}
+
+.nearby-kiosks__status {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+}
+
+.nearby-kiosks__status-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 12px;
+}
+
+.nearby-kiosks__list {
+  list-style: none;
+  margin: 0 -18px 0;
+  padding: 0;
+}
+
+.nearby-kiosks__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 18px;
+}
+
+.nearby-kiosks__item + .nearby-kiosks__item {
+  border-top: 1px dashed var(--rule);
+}
+
+.nearby-kiosks__place {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.nearby-kiosks__name {
+  font-weight: 600;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nearby-kiosks__address {
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nearby-kiosks__walk {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--stamp-red);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
